@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver votre hotel</title>
+</head>
+<body>
+
+    <h1>Votre réservation d'hotel</h1>
+
+    <h5>*Champ obligatoire</h5>
+
+    <form method="get">
+        <label>Nom :<br>
+            <input type="text" name="nom" placeholder="El Manyani">
+        </label><br>
+        <br>
+        <label>Prénom :<br> 
+            <input type="text" name="prénom" placeholder="Ahmed">
+        </label><br>
+        <br>
+        <label>Numéro de téléphone : <br>
+           <input type="tel" name="tel" placeholder="0769504335">
+            </label><br><br>
+        <label> E-mail : <br>
+           <input type="email" name="email" placeholder="ahmed@gmail.com">
+           </label><br>
+
+    <p>Sélectionner la ville souhaiter :</p>
+    <label>
+        <select  id="ville" name="ville">
+            <option value="Paris">Paris</option>
+            <option value="Lille">Lille</option>
+            <option value="Lyon">Lyon</option>
+            <option value="Nantes">Nantes</option>
+            <option value="Marseille">Marseille</option>
+            <option value="Strasbourg">Strasbourg</option>
+        </select>
+        <label><br>
+        
+    <p>Date d'arrivée :</p>
+    <label>
+        <input type="date" name="date">
+    <label><br><br>
+        <p>Date de départ :</p>
+        <label>
+            <input type="date" name="date">
+        <label><br><br>
+
+    <label>Nombre de personnes :
+        <input type="number" name="number" min="0">
+    </label><br>
+
+    <p>Vos options :</p>
+        <label>Climatisation :
+            <input type="checkbox" name="option" value="Climatisation">
+        </label>
+        <label>Mini bar :
+            <input type="checkbox" name="option" value="Mini Bar">
+        </label>
+        <label>jacuzzi :
+            <input type="checkbox" name="option" value="Jacuzzi">
+        </label><br>
+        <br>
+        <br>
+
+        <label>
+            <textarea name="Commentaire" rows="5" cols="30" rows="10"></textarea>
+        </label><br><br>
+
+        <p>*Accepter les conditions générales de vente (CGV) :</p>
+    <label>
+        <input type="radio" name="Conditions" value="Accepter"> Accepter
+    </label>
+    <label>
+        <input type="radio" name="Conditions" value="Refuser"> Refuser
+    </label><br><br>
+<button type="submit" name="Envoyer"> Envoyer le formulaire</button>
+      </form>
+</body>
+</html>
